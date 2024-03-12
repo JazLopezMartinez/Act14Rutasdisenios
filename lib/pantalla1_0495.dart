@@ -7,13 +7,20 @@ class Pantalla1_0495 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Pantalla1 Lopez_0495"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.lightGreen,
       ),
       body: Center(
-        child: Column(
-          children: [
-            ElevatedButton(onPressed: () {}, child: const Text("pantalla1")),
-          ],
+        child: Card(
+          child: Padding(
+            padding: EdgeInsets.all(16),
+            child: Text(
+              'Pantalla1',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  backgroundColor: Colors.lightGreen),
+            ),
+          ),
         ),
       ),
     );

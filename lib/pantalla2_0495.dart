@@ -11,11 +11,24 @@ class Pantalla2_0495 extends StatelessWidget {
         backgroundColor: Colors.purple,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(onPressed: () {}, child: const Text("pantalla2")),
-          ],
+        child: Container(
+          color: Colors.purple,
+          width: double.infinity,
+          height: 300,
+          child: Card(
+            color: Colors.purpleAccent,
+            margin: EdgeInsets.all(32),
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                'Lopez Ejemplo',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.purple,
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
